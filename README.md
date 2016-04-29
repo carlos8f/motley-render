@@ -1,7 +1,7 @@
 # motley-render
 res.render() middleware for serving auto-compiled handlebars/markdown templates in Motley
 
-```
+```js
 module.exports = function container (get, set) {
   var handlebars = get('vendor.handlebars').create();
   set('@middleware.render.handlebars', handlebars);
